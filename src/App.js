@@ -8,6 +8,7 @@ import Info from "./app/screens/info";
 import Agenda from "./app/screens/agenda";
 import Courses from "./app/screens/courses";
 import Editorial from "./app/screens/editorial";
+import Home from "./app/screens/home";
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
       <GlobalStyles />
       <BrowserRouter basename="/">
         <Routes>
-          <Route path="/" element={<Info />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/info" element={<Info />} />
           <Route path="/agenda" element={<Agenda />} />
           <Route path="/cursos" element={<Courses />} />
           <Route path="/editorial" element={<Editorial />} />

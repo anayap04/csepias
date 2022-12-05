@@ -17,6 +17,9 @@ HeaderDiv.defaultProps = {
 export const ImageContainer = styled.div`
   padding-top: 10px;
   padding-left: 20px;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Tabs = styled.div`
