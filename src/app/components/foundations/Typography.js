@@ -5,6 +5,14 @@ const TitlePrincipal = styled.p`
   font-size: 44px;
   color: ${({ theme, color }) => color || theme.colors.black};
   font-family: Acumin-BdPro;
+  text-shadow: ${({withShadow}) => withShadow && '4px -1px 4px rgba(0,0,0,0.85)'};
+`;
+
+const SubTitle = styled.p`
+  font-size: 24px;
+  color: ${({ theme, color }) => color || theme.colors.black};
+  font-family: Acumin-BdPro;
+  text-shadow: ${({withShadow}) => withShadow && '4px -1px 4px rgba(0,0,0,0.85)'};
 `;
 
 
@@ -21,7 +29,7 @@ BodyBold.defaultProps = {
 
 const Body = styled.p`
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme, color }) => color || theme.colors.black};
   font-family: Acumin-RPro;
 `;
 
@@ -32,4 +40,4 @@ Body.defaultProps = {
 
 
 
-export { TitlePrincipal, BodyBold, Body };
+export { TitlePrincipal, SubTitle, BodyBold, Body };
