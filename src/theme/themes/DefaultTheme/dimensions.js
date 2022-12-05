@@ -1,4 +1,4 @@
-const dimensions = {
+export const dimensions = {
   xxs: 2,
   xs: 4,
   s: 8,
@@ -20,5 +20,3 @@ const dimensions = {
     xl: 80,
   },
 }
-
-export default dimensions
