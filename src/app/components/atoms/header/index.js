@@ -3,10 +3,13 @@ import { useTheme } from "styled-components";
 import { DefaultTheme } from "../../../../theme/themes";
 import { HeaderDiv, ImageContainer, Tabs, Tab } from "./styles";
 import { BodyBold } from "../../foundations/Typography";
+import { useNavigate } from "react-router-dom";
 const logo = require("../../../../assets/images/logo.png");
 
 const Header = (props) => {
+  const {optionSelected} = props;
   const theme = useTheme() || DefaultTheme;
+  const navigate = useNavigate();
 
   return (
     <HeaderDiv>
@@ -14,17 +17,32 @@ const Header = (props) => {
         <img alt="logo" width={199} src={logo} />
       </ImageContainer>
       <Tabs>
-        <Tab hoverColor={theme.colors.pantoneGreen}>
+        <Tab
+          actual={optionSelected === 'info'}
+          onClick={() => navigate("/")}
+          hoverColor={theme.colors.pantoneGreen}
+        >
           <BodyBold>{"¿Quiénes somos?"}</BodyBold>
         </Tab>
-        <Tab hoverColor={theme.colors.pantoneBlue}>
-          {" "}
+        <Tab
+          actual={optionSelected === 'courses'}
+          onClick={() => navigate("/cursos")}
+          hoverColor={theme.colors.pantoneBlue}
+        >
           <BodyBold>{"Cursos"}</BodyBold>
         </Tab>
-        <Tab hoverColor={theme.colors.pantoneOrange}>
+        <Tab
+          actual={optionSelected === 'agenda'}
+          onClick={() => navigate("/agenda")}
+          hoverColor={theme.colors.pantoneOrange}
+        >
           <BodyBold>{"Agenda"}</BodyBold>
         </Tab>
-        <Tab hoverColor={theme.colors.pantoneGold}>
+        <Tab
+        actual={optionSelected === 'editorial'}
+          onClick={() => navigate("/editorial")}
+          hoverColor={theme.colors.pantoneGold}
+        >
           <BodyBold>{"Editorial"}</BodyBold>
         </Tab>
       </Tabs>

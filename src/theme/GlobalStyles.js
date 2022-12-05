@@ -1,10 +1,9 @@
 // @flow
-import { createGlobalStyle } from 'styled-components'
-import  AcuminBdItPro from '../assets/fonts/Acumin-BdItPro.woff'
-import  AcuminBdPro from '../assets/fonts/Acumin-BdPro.woff'
-import  AcuminItPro from '../assets/fonts/Acumin-ItPro.woff'
-import  AcuminRPro from '../assets/fonts/Acumin-RPro.woff'
-
+import { createGlobalStyle } from "styled-components";
+import AcuminBdItPro from "../assets/fonts/Acumin-BdItPro.woff";
+import AcuminBdPro from "../assets/fonts/Acumin-BdPro.woff";
+import AcuminItPro from "../assets/fonts/Acumin-ItPro.woff";
+import AcuminRPro from "../assets/fonts/Acumin-RPro.woff";
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -24,6 +23,6 @@ const GlobalStyles = createGlobalStyle`
     src: url(${AcuminRPro}) format('woff');
   }
   
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

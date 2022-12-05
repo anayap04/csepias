@@ -12,4 +12,17 @@ BodyBold.defaultProps = {
   theme: DefaultTheme,
 }
 
-export { BodyBold };
+const Body = styled.p`
+  font-size: 16px;
+  color: ${({ theme }) => theme.colors.black};
+  font-family: Acumin-RPro;
+`;
+
+Body.defaultProps = {
+  theme: DefaultTheme,
+}
+
+
+
+
+export { BodyBold, Body };

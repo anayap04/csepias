@@ -29,6 +29,10 @@ export const Tabs = styled.div`
 export const Tab = styled.div`
   width: 150px;
   text-align: center;
+  background-color: ${({ hoverColor,actual  }) => actual ? hoverColor : 'transparent'};
+  & > ${BodyBold} {
+  color: ${({ theme, actual }) => actual ? theme.colors.white: theme.colors.black};
+  }
   &:hover {
     background-color: ${({ hoverColor }) => hoverColor};
     cursor: pointer;
