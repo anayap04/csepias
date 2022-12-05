@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { DefaultTheme } from "../../../theme/themes";
 
+const TitlePrincipal = styled.p`
+  font-size: 44px;
+  color: ${({ theme, color }) => color || theme.colors.black};
+  font-family: Acumin-BdPro;
+`;
+
+
 const BodyBold = styled.p`
   font-size: 16px;
   color: ${({ theme }) => theme.colors.black};
@@ -25,4 +32,4 @@ Body.defaultProps = {
 
 
 
-export { BodyBold, Body };
+export { TitlePrincipal, BodyBold, Body };

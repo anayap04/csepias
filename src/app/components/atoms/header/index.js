@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const logo = require("../../../../assets/images/logo.png");
 
 const Header = (props) => {
-  const { optionSelected } = props;
+  const { optionSelected, setBackground } = props;
   const theme = useTheme() || DefaultTheme;
   const navigate = useNavigate();
 
@@ -19,6 +19,8 @@ const Header = (props) => {
       <Tabs>
         <Tab
           actual={optionSelected === "info"}
+          onMouseEnter={() => setBackground(theme.colors.pantoneGreen)}
+          onMouseLeave={() => setBackground('transparent')}
           onClick={() => navigate("/info")}
           hoverColor={theme.colors.pantoneGreen}
         >
@@ -27,6 +29,8 @@ const Header = (props) => {
         <Tab
           actual={optionSelected === "courses"}
           onClick={() => navigate("/cursos")}
+          onMouseEnter={() => setBackground(theme.colors.pantoneBlue)}
+          onMouseLeave={() => setBackground('transparent')}
           hoverColor={theme.colors.pantoneBlue}
         >
           <BodyBold>{"Cursos"}</BodyBold>
@@ -34,6 +38,8 @@ const Header = (props) => {
         <Tab
           actual={optionSelected === "agenda"}
           onClick={() => navigate("/agenda")}
+          onMouseEnter={() => setBackground(theme.colors.pantoneOrange)}
+          onMouseLeave={() => setBackground('transparent')}
           hoverColor={theme.colors.pantoneOrange}
         >
           <BodyBold>{"Agenda"}</BodyBold>
@@ -41,6 +47,8 @@ const Header = (props) => {
         <Tab
           actual={optionSelected === "editorial"}
           onClick={() => navigate("/editorial")}
+          onMouseEnter={() => setBackground(theme.colors.pantoneGold)}
+          onMouseLeave={() => setBackground('transparent')}
           hoverColor={theme.colors.pantoneGold}
         >
           <BodyBold>{"Editorial"}</BodyBold>

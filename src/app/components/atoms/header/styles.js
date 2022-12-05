@@ -8,6 +8,7 @@ export const HeaderDiv = styled.div`
   height: 55px;
   display: flex;
   flex-direction: row;
+  padding-bottom: 0px;
 `;
 
 HeaderDiv.defaultProps = {
@@ -23,15 +24,17 @@ export const ImageContainer = styled.div`
 `;
 
 export const Tabs = styled.div`
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   display: flex;
   float: right;
-  margin: auto 0 auto auto;
+  margin: auto 0 0 auto;
 `;
 
 export const Tab = styled.div`
   width: 150px;
   text-align: center;
+  heigth: 55px;
+  margin-bottom: 0px;
   background-color: ${({ hoverColor,actual  }) => actual ? hoverColor : 'transparent'};
   & > ${BodyBold} {
   color: ${({ theme, actual }) => actual ? theme.colors.white: theme.colors.black};
