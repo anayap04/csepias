@@ -12,15 +12,15 @@ const GlobalStyles = createGlobalStyle`
     src: url(${AcuminBdItPro}) format('woff');
   }
   @font-face {
-    font-family: Acumin-BdItPro;
+    font-family: Acumin-BdPro;
     src: url(${AcuminBdPro}) format('woff');
   }
   @font-face {
-    font-family: Acumin-BdItPro;
+    font-family: Acumin-ItPro;
     src: url(${AcuminItPro}) format('woff');
   }
   @font-face {
-    font-family: Acumin-BdItPro;
+    font-family: Acumin-RPro;
     src: url(${AcuminRPro}) format('woff');
   }
   
