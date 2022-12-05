@@ -18,9 +18,9 @@ const SubTitle = styled.p`
 
 const BodyBold = styled.p`
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme, color }) => color || theme.colors.black};
   font-family: Acumin-RPro;
-  font-weight: 900;
+  font-weight: 800;
 `;
 
 BodyBold.defaultProps = {

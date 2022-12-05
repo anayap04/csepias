@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useTheme } from "styled-components";
 import { DefaultTheme } from "../../../theme/themes";
+import Link  from "../../components/atoms/buttons/Link";
 import Header from "../../components/atoms/header";
 import {
   Body,
@@ -20,9 +22,9 @@ const TitleHome = ({ theme }) => (
   </ContentHome>
 );
 
-const SummaryInfo = ({ theme }) => (
+const SummaryInfo = ({ theme, navigate }) => (
   <ContentSummary>
-    <SubTitle color={theme.colors.white}>{"Quiénes somos"}</SubTitle>
+    <SubTitle color={theme.colors.white}>{"¿Quiénes somos?"}</SubTitle>
     <Body color={theme.colors.white}>
       {
         `El Colegio Superior de Especialistas y Profesionales en Inteligencia y Administración de la Seguridad A.C. (CSEPIAS) 
@@ -31,11 +33,35 @@ const SummaryInfo = ({ theme }) => (
         certificación e innovación, de todas las actividades relacionadas con la seguridad.`
       }
     </Body>
+    <Link onClick={() => navigate('/info')} textColor={theme.colors.white} label="Ver más..." />
+  </ContentSummary>
+);
+
+
+const SummaryCourses = ({ theme, navigate }) => (
+  <ContentSummary>
+    <SubTitle color={theme.colors.white}>{"Cursos"}</SubTitle>
+    <Link onClick={() => navigate('/courses')} textColor={theme.colors.white} label="Ver más..." />
+  </ContentSummary>
+);
+
+const SummaryAgenda = ({ theme, navigate }) => (
+  <ContentSummary>
+    <SubTitle color={theme.colors.white}>{"Agenda"}</SubTitle>
+    <Link onClick={() => navigate('/agenda')} textColor={theme.colors.white} label="Ver más..." />
+  </ContentSummary>
+);
+
+const SummaryEditorial = ({ theme, navigate }) => (
+  <ContentSummary>
+    <SubTitle color={theme.colors.white}>{"Editorial"}</SubTitle>
+    <Link onClick={() => navigate('/editorial')} textColor={theme.colors.white} label="Ver más..." />
   </ContentSummary>
 );
 
 const Home = (props) => {
   const [background, setBackground] = useState("transparent");
+  const navigate = useNavigate()
   const theme = useTheme() || DefaultTheme;
   return (
     <div>
@@ -44,7 +70,16 @@ const Home = (props) => {
         <Content background={background}>
           {background === "transparent" && <TitleHome theme={theme} />}
           {background === theme.colors.pantoneGreen && (
-            <SummaryInfo theme={theme} />
+            <SummaryInfo theme={theme} navigate={navigate} />
+          )}
+          {background === theme.colors.pantoneBlue && (
+            <SummaryCourses theme={theme} navigate={navigate} />
+          )}
+             {background === theme.colors.pantoneOrange && (
+            <SummaryAgenda theme={theme} navigate={navigate} />
+          )}
+          {background === theme.colors.pantoneGold && (
+            <SummaryEditorial theme={theme} navigate={navigate} />
           )}
         </Content>
       </Container>

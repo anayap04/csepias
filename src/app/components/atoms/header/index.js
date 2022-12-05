@@ -13,14 +13,13 @@ const Header = (props) => {
 
   return (
     <HeaderDiv>
-      <ImageContainer onClick={() => navigate("/")}>
+      <ImageContainer onMouseEnter={() => setBackground('transparent')} onClick={() => navigate("/")}>
         <img alt="logo" width={199} src={logo} />
       </ImageContainer>
-      <Tabs>
+      <Tabs onMouseEnter={() => setBackground('transparent')}>
         <Tab
           actual={optionSelected === "info"}
           onMouseEnter={() => setBackground(theme.colors.pantoneGreen)}
-          onMouseLeave={() => setBackground('transparent')}
           onClick={() => navigate("/info")}
           hoverColor={theme.colors.pantoneGreen}
         >
@@ -30,7 +29,6 @@ const Header = (props) => {
           actual={optionSelected === "courses"}
           onClick={() => navigate("/cursos")}
           onMouseEnter={() => setBackground(theme.colors.pantoneBlue)}
-          onMouseLeave={() => setBackground('transparent')}
           hoverColor={theme.colors.pantoneBlue}
         >
           <BodyBold>{"Cursos"}</BodyBold>
@@ -39,7 +37,6 @@ const Header = (props) => {
           actual={optionSelected === "agenda"}
           onClick={() => navigate("/agenda")}
           onMouseEnter={() => setBackground(theme.colors.pantoneOrange)}
-          onMouseLeave={() => setBackground('transparent')}
           hoverColor={theme.colors.pantoneOrange}
         >
           <BodyBold>{"Agenda"}</BodyBold>
@@ -48,7 +45,6 @@ const Header = (props) => {
           actual={optionSelected === "editorial"}
           onClick={() => navigate("/editorial")}
           onMouseEnter={() => setBackground(theme.colors.pantoneGold)}
-          onMouseLeave={() => setBackground('transparent')}
           hoverColor={theme.colors.pantoneGold}
         >
           <BodyBold>{"Editorial"}</BodyBold>
