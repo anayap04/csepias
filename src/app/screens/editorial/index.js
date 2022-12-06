@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../../components/organism/header";
-import { LineHorizontal } from "../../components/atoms/line-separator/Separators";
-import { SubTitle } from "../../components/foundations/Typography";
-import { Container, HeadContainer } from "./styles";
 import Head from "../../components/organism/head";
+import { useTheme } from "styled-components";
+import { DefaultTheme } from "../../../theme/themes";
 
 const Editorial = (props) => {
+  const theme = useTheme() || DefaultTheme
   return (
     <div>
       <Header optionSelected="editorial" />
-        <Head title="Editorial" />
+        <Head title="Editorial"  icon="Homework" colorIcon={theme.colors.pantoneGold} />
     </div>
   );
 };

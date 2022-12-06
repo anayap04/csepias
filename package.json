@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "svgr:icons": "svgr src/assets/images/svg -d src/assets/images/svg --no-dimensions",
+    "svgr:icons": "svgr src/assets/images/svg -d src/assets/images/svg --replace-attr-values \"color={props.color}\" --no-dimensions",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {

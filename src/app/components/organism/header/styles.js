@@ -3,7 +3,7 @@ import { DefaultTheme } from "../../../../theme/themes";
 import { BodyBold } from "../../foundations/Typography";
 
 export const HeaderDiv = styled.div`
-  width: 100vw;
+  width: 98vw;
   background-color: ${({ theme }) => theme.colors.white};
   height: 55px;
   display: flex;
@@ -28,7 +28,7 @@ export const Tabs = styled.div`
   padding-bottom: 0px;
   display: flex;
   float: right;
-  margin: auto 0 0 auto;
+  margin: 0 0 0 auto;
 `;
 
 export const Tab = styled.div`
