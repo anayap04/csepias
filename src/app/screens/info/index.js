@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/atoms/header";
+import Header from "../../components/organism/header";
 
 const Info = (props) => {
   return (

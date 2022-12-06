@@ -36,9 +36,11 @@ export const Tab = styled.div`
   text-align: center;
   heigth: 55px;
   margin-bottom: 0px;
-  background-color: ${({ hoverColor,actual  }) => actual ? hoverColor : 'transparent'};
+  background-color: ${({ hoverColor, actual }) =>
+    actual ? hoverColor : "transparent"};
   & > ${BodyBold} {
-  color: ${({ theme, actual }) => actual ? theme.colors.white: theme.colors.black};
+    color: ${({ theme, actual }) =>
+      actual ? theme.colors.white : theme.colors.black};
   }
   &:hover {
     background-color: ${({ hoverColor }) => hoverColor};

@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 import { useTheme } from "styled-components";
 import { DefaultTheme } from "../../../theme/themes";
 import Link  from "../../components/atoms/buttons/Link";
-import Header from "../../components/atoms/header";
+import Header from "../../components/organism/header";
 import {
   Body,
   SubTitle,
   TitlePrincipal,
 } from "../../components/foundations/Typography";
-import { Container, Content, ContentHome, ContentSummary } from "./styles";
+import HamMenu from "../../components/organism/menu";
+import { Root, Container, Content, ContentHome, ContentSummary } from "./styles";
 
 const TitleHome = ({ theme }) => (
   <ContentHome>
@@ -64,7 +65,7 @@ const Home = (props) => {
   const navigate = useNavigate()
   const theme = useTheme() || DefaultTheme;
   return (
-    <div>
+    <Root>
       <Header setBackground={setBackground} />
       <Container>
         <Content background={background}>
@@ -83,7 +84,7 @@ const Home = (props) => {
           )}
         </Content>
       </Container>
-    </div>
+    </Root>
   );
 };
 

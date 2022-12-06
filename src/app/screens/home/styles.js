@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { DefaultTheme } from "../../../theme/themes";
 import security from "../../../assets/images/security.jpg";
 
+export const Root = styled.div`
+height: 100vh;
+width: 100vw;
+`
+
 export const Container = styled.div`
   background: url(${security});
   background-size: 100vw 100vh;

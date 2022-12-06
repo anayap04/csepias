@@ -1,19 +1,18 @@
 import React from "react";
-import Header from "../../components/atoms/header";
-import { LineHorizontal } from "../../components/atoms/line-separator/Separators";
-import { SubTitle } from "../../components/foundations/Typography";
-import { Container, HeadContainer } from "./styles";
+import Head from "../../components/organism/head";
+import Header from "../../components/organism/header";
 
 const Agenda = (props) => {
   return (
     <div>
       <Header optionSelected="agenda" />
-      <Container>
-        <HeadContainer>
-          <SubTitle>{"Agenda"}</SubTitle>
-          <LineHorizontal />
-        </HeadContainer>
-      </Container>
+      <Head
+        title="Agenda"
+        description={`En esta sección encontrarás todos los eventos que tenemos 
+        para este mes. También puedes ver los que tendremos próximamente.`}
+      >
+        <div>{"p"}</div>
+      </Head>
     </div>
   );
 };
