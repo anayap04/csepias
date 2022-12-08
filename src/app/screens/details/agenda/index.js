@@ -29,7 +29,7 @@ import useWindowDimensions from "../../../../utils/useWindowDimensions";
 const DetailEvent = (props) => {
   const theme = useTheme() || DefaultTheme;
   const location = useLocation();
-  const {width} = useWindowDimensions()
+  const { width } = useWindowDimensions();
   const idMonth = location.state.month;
   const eventCode = location.state.idEvent;
   const eventSelected = data[idMonth].filter(
@@ -57,22 +57,30 @@ const DetailEvent = (props) => {
         <ImageContent src={eventSelected.image} />
       </BodyContent>
       <Content>
-      <DescriptionContent isMobile={isMobile}>
-        <Body>{eventSelected.description}</Body>
-        <SubTitle>{"Panelistas"}</SubTitle>
-        {eventSelected.panelists.map((cont, index) => (
-          <div key={index}>
-            <BodyBold>{cont.name}</BodyBold>
-            <Body>{cont.description}</Body>
-          </div>
-        ))}
-      </DescriptionContent>
-      <MoreInfo isMobile={isMobile}>
-        <SubTitle>{"Para más información"}</SubTitle>
-        <Body>{"info@csepsias.org"}</Body>
-        <Primary width={isMobile ? width * 0.7 : width * 0.25} backgroundColor={theme.colors.pantoneGreen} label="Contáctanos en WhatsApp" />
-        <Primary width={isMobile ? width * 0.7 : width * 0.25} backgroundColor={theme.colors.pantoneBlue} label="Descarga la agenda y el flyer" />
-      </MoreInfo>
+        <DescriptionContent isMobile={isMobile}>
+          <Body>{eventSelected.description}</Body>
+          <SubTitle>{"Panelistas"}</SubTitle>
+          {eventSelected.panelists.map((cont, index) => (
+            <div key={index}>
+              <BodyBold>{cont.name}</BodyBold>
+              <Body>{cont.description}</Body>
+            </div>
+          ))}
+        </DescriptionContent>
+        <MoreInfo isMobile={isMobile}>
+          <SubTitle>{"Para más información"}</SubTitle>
+          <Body>{"info@csepsias.org"}</Body>
+          <Primary
+            width={isMobile ? width * 0.7 : width * 0.25}
+            backgroundColor={theme.colors.pantoneGreen}
+            label="Contáctanos en WhatsApp"
+          />
+          <Primary
+            width={isMobile ? width * 0.7 : width * 0.25}
+            backgroundColor={theme.colors.pantoneBlue}
+            label="Descarga la agenda y el flyer"
+          />
+        </MoreInfo>
       </Content>
     </Root>
   );
