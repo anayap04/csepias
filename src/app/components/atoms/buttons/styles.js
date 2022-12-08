@@ -2,9 +2,13 @@ import styled from "styled-components";
 import { DefaultTheme } from "../../../../theme/themes";
 
 export const PrimaryContainer = styled.button`
-  width: 200px;
-  backgound-color: ${({ backgroundColor }) => backgroundColor};
+  width: ${({width}) => width ? width+'px': 'fit-content'};
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: ${({ backgroundColor }) => backgroundColor};
   border-radius: 10px;
+  border: 0;
+  margin-top: 10px;
 `;
 
 export const LinkContainer = styled.a`
