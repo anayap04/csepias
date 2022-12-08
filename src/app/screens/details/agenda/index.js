@@ -60,11 +60,11 @@ const DetailEvent = (props) => {
       <DescriptionContent isMobile={isMobile}>
         <Body>{eventSelected.description}</Body>
         <SubTitle>{"Panelistas"}</SubTitle>
-        {eventSelected.panelists.map((cont) => (
-          <>
+        {eventSelected.panelists.map((cont, index) => (
+          <div key={index}>
             <BodyBold>{cont.name}</BodyBold>
             <Body>{cont.description}</Body>
-          </>
+          </div>
         ))}
       </DescriptionContent>
       <MoreInfo isMobile={isMobile}>

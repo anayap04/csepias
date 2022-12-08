@@ -7,7 +7,6 @@ import { PrimaryContainer } from "./styles";
 const Primary = (props) => {
   const theme = useTheme() || DefaultTheme;
   const { backgroundColor = theme.colors.pantonerGreen, label, width } = props;
-  console.log(backgroundColor)
 
   return (
     <PrimaryContainer width={width} backgroundColor={backgroundColor}>
