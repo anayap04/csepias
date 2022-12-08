@@ -8,6 +8,7 @@ import Agenda from "./app/screens/agenda";
 import Courses from "./app/screens/courses";
 import Editorial from "./app/screens/editorial";
 import Home from "./app/screens/home";
+import DetailEvent from "./app/screens/details/agenda";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
           <Route path="/agenda" element={<Agenda />} />
+          <Route path="/agenda/event" element={<DetailEvent />}/>
           <Route path="/cursos" element={<Courses />} />
           <Route path="/editorial" element={<Editorial />} />
         </Routes>

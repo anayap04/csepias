@@ -4,6 +4,7 @@ import { DefaultTheme } from "../../../../theme/themes";
 export const Root = styled.div`
   width: ${({width}) => width}px;
   margin-right: 15px;
+  margin-left: 15px;
   
 `
 

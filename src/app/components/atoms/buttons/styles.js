@@ -10,6 +10,10 @@ export const PrimaryContainer = styled.button`
 export const LinkContainer = styled.a`
   width: 200px;
   backgound-color: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+
 `;
 
 export const IconBtnContainer = styled.button`

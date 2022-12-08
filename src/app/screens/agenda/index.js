@@ -5,28 +5,61 @@ import Head from "../../components/organism/head";
 import Header from "../../components/organism/header";
 import IconBtn from "../../components/atoms/buttons/IconBtn";
 import ListView from "../../components/molecules/list-view";
+import CardLong from "../../components/organism/card";
 import { SubTitle } from "../../components/foundations/Typography";
-import { Filter, FilterControlers } from "./styles";
+import { BodyContent, Filter, FilterControlers } from "./styles";
 import { useEffect } from "react";
+import { isMobile } from "react-device-detect";
+import { useNavigate } from "react-router-dom";
+
+//Mock data
+const mock = require("../../../__mocks__/agendaInfo.json");
 
 const Agenda = (props) => {
   const theme = useTheme() || DefaultTheme;
+  const navigate = useNavigate();
   const arrayList = [
-    { label: "Octubre", id:0 },
+    { label: "Octubre", id: 0 },
     { label: "Noviembre", id: 1 },
     { label: "Diciembre", id: 2 },
   ];
-  const [id, setId ]= useState(0);
-  const [value, getValue] = useState(arrayList[id] ?  arrayList[id].label : arrayList[0].label);
+  const [id, setId] = useState(arrayList[0].id);
+  const [value, getValue] = useState(
+    arrayList[id] ? arrayList[id].label : arrayList[0].label
+  );
+  const [monthArray, setMonthArray] = useState(mock[id]);
   const increment = () => setId(id + 1);
+  const decrement = () => setId(id - 1);
 
   useEffect(() => {
-    getValue(arrayList[id] ? arrayList[id].label : arrayList[0].label)
-    if (!arrayList[id]) {
-      setId(0)
+    if (arrayList[arrayList.length - 1].id < id) {
+      setId(arrayList[0].id);
     }
-  }, [id])
- 
+    getValue(arrayList[id] ? arrayList[id].label : arrayList[0].label);
+    setMonthArray(arrayList[id] ? mock[id] : mock[0]);
+  }, [id, value]);
+
+  const renderCards = (item) => (
+    <CardLong
+      title={item.nameEvent}
+      image={item.image}
+      date={item.date}
+      description={item.summary}
+      buttonLabel="Ver más información"
+      tag="Webinar Internacional"
+      timeArr={item.times}
+      colorTag={theme.colors.pantoneOrange}
+      onClickBtn={() =>
+        navigate("/agenda/event", {
+          state: {
+            idEvent: item.id,
+            month: id,
+          },
+        })
+      }
+    />
+  );
+
   return (
     <div>
       <Header optionSelected="agenda" />
@@ -37,18 +70,36 @@ const Agenda = (props) => {
         description={`En esta sección encontrarás todos los eventos que tenemos 
         para este mes. También puedes ver los que tendremos próximamente.`}
       >
-        <Filter>
-        <SubTitle>{value}</SubTitle>
-        <FilterControlers>
-          <ListView width={150} getValue={getValue} initialValue={value} arrayList={arrayList} />{" "}
-          <IconBtn
-            onClick={() => increment()}
-            hoverColor={theme.colors.pantoneGreen}
-            iconName="RightArrow"
-          />
-        </FilterControlers>
+        <Filter isMobile={isMobile}>
+          <SubTitle>{value}</SubTitle>
+          <FilterControlers isMobile={isMobile}>
+            {id > 0 && (
+              <IconBtn
+                onClick={() => decrement()}
+                hoverColor={theme.colors.pantoneGreen}
+                iconName="LeftArrow"
+              />
+            )}
+            {!isMobile && (
+              <ListView
+                getIdValue={setId}
+                width={isMobile ? 100 : 150}
+                getValue={getValue}
+                initialValue={value}
+                arrayList={arrayList}
+              />
+            )}
+            <IconBtn
+              onClick={() => increment()}
+              hoverColor={theme.colors.pantoneGreen}
+              iconName="RightArrow"
+            />
+          </FilterControlers>
         </Filter>
       </Head>
+      <BodyContent>
+        {monthArray && monthArray.map((item) => renderCards(item))}
+      </BodyContent>
     </div>
   );
 };

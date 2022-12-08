@@ -9,6 +9,7 @@ import DownArrow from "../../../assets/images/svg/DownArrow";
 import Email from "../../../assets/images/svg/Email";
 import Homework from "../../../assets/images/svg/Homework";
 import Location from "../../../assets/images/svg/Location";
+import LeftArrow from "../../../assets/images/svg/LeftArrow";
 import RightArrow from "../../../assets/images/svg/RightArrow";
 
 const Components = {
@@ -19,6 +20,7 @@ const Components = {
   Email,
   Homework,
   Location,
+  LeftArrow,
   RightArrow,
 };
 
