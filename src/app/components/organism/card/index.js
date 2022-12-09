@@ -36,7 +36,7 @@ const CardLong = (props) => {
   const actualWidth = customWidth || width;
   const widthCustom = isMobile ? actualWidth * 0.9 : actualWidth;
   const renderTimes = (time) => (
-    <>
+    <div key={time.city}>
       {isMobile ? (
         <SubTitleLightSmall
           color={theme.colors.white}
@@ -46,11 +46,12 @@ const CardLong = (props) => {
           color={theme.colors.white}
         >{`${time.city} – ${time.time}`}</SubTitleLight>
       )}
-    </>
+    </div>
   );
 
   return (
     <CardContainer
+      onClick={() => onClickBtn()}
       isMobile={isMobile}
       onMouseEnter={() => setShowMore(true)}
       onMouseLeave={() => setShowMore(false)}
@@ -65,7 +66,9 @@ const CardLong = (props) => {
             backgroundColor={theme.colors.pantoneGreen}
           >
             {isMobile ? (
-              <TitleLightSmall color={theme.colors.white}>{date}</TitleLightSmall>
+              <TitleLightSmall color={theme.colors.white}>
+                {date}
+              </TitleLightSmall>
             ) : (
               <TitleLight color={theme.colors.white}>{date}</TitleLight>
             )}

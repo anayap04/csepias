@@ -6,7 +6,7 @@ import { SubTitleLightSmall } from "../../foundations/Typography";
 import { Container, IconContainer } from "./styles";
 
 const IconTextInfo = (props) => {
-  const { icon, text, width } = props;
+  const { icon, text, width, secondLine } = props;
   const theme = useTheme() || DefaultTheme;
 
   return (
@@ -14,7 +14,10 @@ const IconTextInfo = (props) => {
       <IconContainer>
       <Icons iconName={icon} size={theme.dimensions.icon.l} />
       </IconContainer>
+      <div>
       <SubTitleLightSmall>{text}</SubTitleLightSmall>
+      {secondLine && <SubTitleLightSmall>{secondLine}</SubTitleLightSmall>}
+      </div>
     </Container>
   );
 };

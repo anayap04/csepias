@@ -39,25 +39,27 @@ const Agenda = (props) => {
     setMonthArray(arrayList[id] ? mock[id] : mock[0]);
   }, [id, value]);
 
-  const renderCards = (item) => (
-    <CardLong
-      title={item.nameEvent}
-      image={item.image}
-      date={item.date}
-      description={item.summary}
-      buttonLabel="Ver más información"
-      tag="Webinar Internacional"
-      timeArr={item.times}
-      colorTag={theme.colors.pantoneOrange}
-      onClickBtn={() =>
-        navigate("/agenda/event", {
-          state: {
-            idEvent: item.id,
-            month: id,
-          },
-        })
-      }
-    />
+  const renderCards = (item, index) => (
+    <div key={index}>
+      <CardLong
+        title={item.nameEvent}
+        image={item.image}
+        date={item.date}
+        description={item.summary}
+        buttonLabel="Ver más información"
+        tag="Webinar Internacional"
+        timeArr={item.times}
+        colorTag={theme.colors.pantoneOrange}
+        onClickBtn={() =>
+          navigate("/agenda/event", {
+            state: {
+              idEvent: item.id,
+              month: id,
+            },
+          })
+        }
+      />
+    </div>
   );
 
   return (
@@ -98,7 +100,8 @@ const Agenda = (props) => {
         </Filter>
       </Head>
       <BodyContent>
-        {monthArray && monthArray.map((item) => renderCards(item))}
+        {monthArray &&
+          monthArray.map((item, index) => renderCards(item, index))}
       </BodyContent>
     </div>
   );

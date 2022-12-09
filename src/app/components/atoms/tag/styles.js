@@ -5,6 +5,7 @@ import { TagLabel } from "../../foundations/Typography";
 export const getTagColor = (type, theme) => {
   const colors = {
     webinar: theme.colors.pantoneOrange,
+    course: theme.colors.pantoneBlue,
   }
   return colors[type] || colors.webinar;
 

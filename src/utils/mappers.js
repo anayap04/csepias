@@ -1,6 +1,7 @@
 export const getTagLabel = type => {
   const labels = {
     webinar: "Webinar Internacional",
+    course: "Curso/Capacitación",
   }
 
   return labels[type] || labels.webinar

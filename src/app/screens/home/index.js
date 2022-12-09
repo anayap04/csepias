@@ -10,7 +10,6 @@ import {
   SubTitle,
   TitlePrincipal,
 } from "../../components/foundations/Typography";
-import HamMenu from "../../components/organism/menu";
 import { Root, Container, Content, ContentHome, ContentSummary } from "./styles";
 
 const TitleHome = ({ theme }) => (
@@ -42,7 +41,7 @@ const SummaryInfo = ({ theme, navigate }) => (
 const SummaryCourses = ({ theme, navigate }) => (
   <ContentSummary>
     <SubTitle color={theme.colors.white}>{"Cursos"}</SubTitle>
-    <Link onClick={() => navigate('/courses')} textColor={theme.colors.white} label="Ver más..." />
+    <Link onClick={() => navigate('/cursos')} textColor={theme.colors.white} label="Ver más..." />
   </ContentSummary>
 );
 

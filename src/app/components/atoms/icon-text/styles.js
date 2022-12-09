@@ -8,6 +8,7 @@ export const Container = styled.div`
   flex-direction: row;
   & ${SubTitleLightSmall} {
     margin-top: 2px;
+    margin-bottom: 0px;
   }
 `
 
