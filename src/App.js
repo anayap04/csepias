@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { DefaultTheme } from "./theme/themes";
 import GlobalStyles from "./theme/GlobalStyles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from './utils/ScrollToTop';
 import Info from "./app/screens/info";
 import Agenda from "./app/screens/agenda";
 import Courses from "./app/screens/courses";
@@ -17,6 +18,7 @@ function App() {
     <ThemeProvider theme={DefaultTheme}>
       <GlobalStyles />
       <BrowserRouter basename="/csepias">
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
