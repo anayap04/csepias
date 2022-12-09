@@ -27,12 +27,12 @@ const CardSummary = (props) => {
         <Image isMobile={isMobile} src={image} />
       </ImageContainer>
       <BodyCard>
-        {showSummary ? (
+        {showSummary && !isMobile ? (
           <SubTitleSmall>{title}</SubTitleSmall>
         ) : (
           <SubTitle>{title}</SubTitle>
         )}
-        {showSummary && <Body>{summary}</Body>}
+        {showSummary && !isMobile && <Body>{summary}</Body>}
         <Link
           onClick={() => onClickBtn()}
           textColor={theme.colors.pantoneGreen}

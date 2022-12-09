@@ -88,7 +88,7 @@ const CardLong = (props) => {
           ) : (
             <SubTitle>{title}</SubTitle>
           )}
-          {showDescription && <Body>{description}</Body>}
+          {showDescription && !isMobile && <Body>{description}</Body>}
           <Link onClick={() => onClickBtn()} label={buttonLabel} />
         </ColTitle>
       </Content>

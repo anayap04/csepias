@@ -26,5 +26,6 @@ export const IconContainer = styled.div`
   padding-top: 2px;
   padding-left: 7px;
   height: 20px;
+  margin: 0 5px 0 auto;
   
 `
