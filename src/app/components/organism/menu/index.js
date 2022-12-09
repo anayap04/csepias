@@ -41,8 +41,8 @@ const HamMenu = (props) => {
     <Menu
       right
       styles={styles}
-      customBurgerIcon={<img src={icon} />}
-      customCrossIcon={<img src={cross} />}
+      customBurgerIcon={<img alt="Menu" src={icon} />}
+      customCrossIcon={<img alt="Cerrar" src={cross} />}
     >
       <MenuItem alt="Informacion" href="/info">
         {"Quienes somos"}
