@@ -5,9 +5,11 @@ import { slide as Menu } from "react-burger-menu";
 import { MenuItem } from "./styles";
 import icon from "../../../../assets/images/svg/menu.svg";
 import cross from "../../../../assets/images/svg/cross.svg";
+import { useNavigate } from "react-router-dom";
 
 const HamMenu = (props) => {
   const theme = useTheme() || DefaultTheme;
+  const navigate = useNavigate();
 
   const styles = {
     bmMenu: {
@@ -44,16 +46,16 @@ const HamMenu = (props) => {
       customBurgerIcon={<img alt="Menu" src={icon} />}
       customCrossIcon={<img alt="Cerrar" src={cross} />}
     >
-      <MenuItem alt="Informacion" href="/info">
+      <MenuItem alt="Informacion" onClick={() => navigate('/info')}>
         {"Quienes somos"}
       </MenuItem>
-      <MenuItem alt="Cursos" href="/cursos">
+      <MenuItem alt="Cursos" onClick={() => navigate('/cursos')}>
         {"Cursos"}
       </MenuItem>
-      <MenuItem alt="Agenda" href="/agenda">
+      <MenuItem alt="Agenda" onClick={() => navigate('/agenda')}>
         {"Agenda"}
       </MenuItem>
-      <MenuItem alt="Editorial" href="/editorial">
+      <MenuItem alt="Editorial" onClick={() => navigate('/editorial')}>
         {"Editorial"}
       </MenuItem>
     </Menu>
