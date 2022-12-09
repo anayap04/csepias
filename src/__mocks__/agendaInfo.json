@@ -21,7 +21,7 @@
     {
       "id": 1,
       "typeEvent": "webinar",
-      "nameEvent": "Segundo Evento",
+      "nameEvent": "People everywhere",
       "summary": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. Esta información se verá cuando el usuario coloque el mouse sobre la tarjeta.",
       "description": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. /n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus sit amet nisl consectetur condimentum. Suspendisse scelerisque tristique tellus, at feugiat ex ullamcorper fermentum. Nulla facilisi. Fusce ac velit in neque fringilla iaculis non id ante. Fusce ut dapibus ligula. Fusce sollicitudin leo nec augue scelerisque volutpat. Donec eu nunc lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum fermentum ullamcorper mi, vel faucibus augue. Pellentesque ac aliquet lacus. Morbi a fermentum tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "date": "2022-10-19",
@@ -39,7 +39,7 @@
     {
       "id": 2,
       "typeEvent": "webinar",
-      "nameEvent": "Tercer Evento: Octubre",
+      "nameEvent": "A sense of expectation hanging in the air",
       "summary": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. Esta información se verá cuando el usuario coloque el mouse sobre la tarjeta.",
       "description": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. /n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus sit amet nisl consectetur condimentum. Suspendisse scelerisque tristique tellus, at feugiat ex ullamcorper fermentum. Nulla facilisi. Fusce ac velit in neque fringilla iaculis non id ante. Fusce ut dapibus ligula. Fusce sollicitudin leo nec augue scelerisque volutpat. Donec eu nunc lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum fermentum ullamcorper mi, vel faucibus augue. Pellentesque ac aliquet lacus. Morbi a fermentum tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "date": "2022-10-08",
@@ -59,7 +59,7 @@
     {
       "id": 0,
       "typeEvent": "webinar",
-      "nameEvent": "Inteligencia Competitiva: Evento Noviembre",
+      "nameEvent": "Across the room your eyes are glowing in the dark",
       "summary": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. Esta información se verá cuando el usuario coloque el mouse sobre la tarjeta.",
       "description": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. /n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus sit amet nisl consectetur condimentum. Suspendisse scelerisque tristique tellus, at feugiat ex ullamcorper fermentum. Nulla facilisi. Fusce ac velit in neque fringilla iaculis non id ante. Fusce ut dapibus ligula. Fusce sollicitudin leo nec augue scelerisque volutpat. Donec eu nunc lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum fermentum ullamcorper mi, vel faucibus augue. Pellentesque ac aliquet lacus. Morbi a fermentum tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "date": "2022-11-03",
@@ -77,7 +77,7 @@
     {
       "id": 1,
       "typeEvent": "webinar",
-      "nameEvent": "Segundo Evento de Noviembre",
+      "nameEvent": "And here we go again, we know the start, we know the end",
       "summary": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. Esta información se verá cuando el usuario coloque el mouse sobre la tarjeta.",
       "description": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. /n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus sit amet nisl consectetur condimentum. Suspendisse scelerisque tristique tellus, at feugiat ex ullamcorper fermentum. Nulla facilisi. Fusce ac velit in neque fringilla iaculis non id ante. Fusce ut dapibus ligula. Fusce sollicitudin leo nec augue scelerisque volutpat. Donec eu nunc lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum fermentum ullamcorper mi, vel faucibus augue. Pellentesque ac aliquet lacus. Morbi a fermentum tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "date": "2022-11-18",
@@ -95,7 +95,7 @@
     {
       "id": 2,
       "typeEvent": "webinar",
-      "nameEvent": "Tercer Evento: Noviembre",
+      "nameEvent": "Masters of the scene",
       "summary": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. Esta información se verá cuando el usuario coloque el mouse sobre la tarjeta.",
       "description": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. /n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus sit amet nisl consectetur condimentum. Suspendisse scelerisque tristique tellus, at feugiat ex ullamcorper fermentum. Nulla facilisi. Fusce ac velit in neque fringilla iaculis non id ante. Fusce ut dapibus ligula. Fusce sollicitudin leo nec augue scelerisque volutpat. Donec eu nunc lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum fermentum ullamcorper mi, vel faucibus augue. Pellentesque ac aliquet lacus. Morbi a fermentum tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "date": "2022-11-23",
@@ -115,7 +115,7 @@
     {
       "id": 0,
       "typeEvent": "webinar",
-      "nameEvent": "Inteligencia Competitiva: Evento Diciembre",
+      "nameEvent": "We've done it all before and now we're back to get some more",
       "summary": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. Esta información se verá cuando el usuario coloque el mouse sobre la tarjeta.",
       "description": "Acá irá una breve descripción sobre el evento que puede incluir información sobre el mismo o incluso información sobre los panelistas. /n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus sit amet nisl consectetur condimentum. Suspendisse scelerisque tristique tellus, at feugiat ex ullamcorper fermentum. Nulla facilisi. Fusce ac velit in neque fringilla iaculis non id ante. Fusce ut dapibus ligula. Fusce sollicitudin leo nec augue scelerisque volutpat. Donec eu nunc lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum fermentum ullamcorper mi, vel faucibus augue. Pellentesque ac aliquet lacus. Morbi a fermentum tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "date": "2022-12-24",

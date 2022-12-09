@@ -99,7 +99,7 @@ const DetailCourse = (props) => {
         </DescriptionContent>
         <MoreInfo isMobile={isMobile}>
           <SubTitle>{"Costos"}</SubTitle>
-          <Table>
+          <Table  isMobile={isMobile}>
             <TableBody isMobile={isMobile}>
               {courseSelected.prices.map((row) => mapRow(row))}
             </TableBody>

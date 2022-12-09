@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTheme } from "styled-components";
 import { DefaultTheme } from "../../../../theme/themes";
 import Link from "../../atoms/buttons/Link";
-import { Body, SubTitleSmall } from "../../foundations/Typography";
+import { Body, SubTitle, SubTitleSmall } from "../../foundations/Typography";
 import { BodyCard, ImageContainer, ContainerCard, Image } from "./styles";
 
 const CardSummary = (props) => {
@@ -25,7 +25,11 @@ const CardSummary = (props) => {
         <Image src={image} />
       </ImageContainer>
       <BodyCard>
-        <SubTitleSmall>{title}</SubTitleSmall>
+        {showSummary ? (
+          <SubTitleSmall>{title}</SubTitleSmall>
+        ) : (
+          <SubTitle>{title}</SubTitle>
+        )}
         {showSummary && <Body>{summary}</Body>}
         <Link
           onClick={() => onClickBtn()}

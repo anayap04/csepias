@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { DefaultTheme } from "../../../../theme/themes";
+import { SubTitle } from "../../foundations/Typography";
 
 
 
@@ -23,6 +24,9 @@ export const BodyCard = styled.div`
   z-index: 10;
   text-align: center;
   background-color: ${({ theme }) => theme.colors.white};
+  ${SubTitle} {
+    margin-bottom: 10px;
+  }
 `;
 
 BodyCard.defaultProps = {
@@ -45,6 +49,7 @@ export const ContainerCard = styled.div`
       background-color: ${({ theme }) => theme.colors.white}c2;
     }
   }
+  
 `;
 
 ContainerCard.defaultProps = {

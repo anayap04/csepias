@@ -11,12 +11,14 @@ import { BodyContent, Filter, FilterControlers } from "./styles";
 import { useEffect } from "react";
 import { isMobile } from "react-device-detect";
 import { useNavigate } from "react-router-dom";
+import useWindowDimensions from "../../../utils/useWindowDimensions";
 
 //Mock data
 const mock = require("../../../__mocks__/agendaInfo.json");
 
 const Agenda = (props) => {
   const theme = useTheme() || DefaultTheme;
+  const {width} = useWindowDimensions()
   const navigate = useNavigate();
   const arrayList = [
     { label: "Octubre", id: 0 },
@@ -74,7 +76,7 @@ const Agenda = (props) => {
         para este mes. También puedes ver los que tendremos próximamente.`}
       >
         <Filter isMobile={isMobile}>
-          <SubTitle>{value}</SubTitle>
+          {!isMobile && <SubTitle>{value}</SubTitle>}
           <FilterControlers isMobile={isMobile}>
             {id > 0 && (
               <IconBtn
@@ -83,15 +85,13 @@ const Agenda = (props) => {
                 iconName="LeftArrow"
               />
             )}
-            {!isMobile && (
               <ListView
                 getIdValue={setId}
-                width={isMobile ? 100 : 150}
+                width={isMobile ? width * 0.57 : 150}
                 getValue={getValue}
                 initialValue={value}
                 arrayList={arrayList}
               />
-            )}
             <IconBtn
               onClick={() => increment()}
               hoverColor={theme.colors.pantoneGreen}
