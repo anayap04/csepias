@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import { DefaultTheme } from "../../../../theme/themes";
+import { fadeIn } from "react-animations";
 import { SubTitle } from "../../foundations/Typography";
 
-
+const fadeAnimation = keyframes`${fadeIn}`;
 
 export const ImageContainer = styled.div`
   heigth: 160px;
@@ -12,7 +13,7 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   object-fit: cover;
   object-position: 100% 0;
-  width: 270px;
+  width: ${({isMobile}) => isMobile ? '80vw': '270px'};
   height: 160px;
   z-index: -1;
 `;
@@ -35,17 +36,18 @@ BodyCard.defaultProps = {
 
 
 export const ContainerCard = styled.div`
-  width: 270px;
+  width: ${({isMobile}) => isMobile ? '80vw': '270px'};
   height: 320px;
   border: 2px ${({ theme }) => theme.colors.black} solid;
   z-index: 0;
+  animation: 0.5s ${fadeAnimation};
   &:hover {
     ${BodyCard} {
       height: 300px;
       transition: 0.3s ease-in-out;
       margin-top: -161px;
       position: absolute;
-      width: 270px;
+      width: ${({isMobile}) => isMobile ? '80vw': '270px'};
       background-color: ${({ theme }) => theme.colors.white}c2;
     }
   }

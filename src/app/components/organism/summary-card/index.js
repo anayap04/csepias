@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { isMobile } from "react-device-detect";
 import { useTheme } from "styled-components";
 import { DefaultTheme } from "../../../../theme/themes";
 import Link from "../../atoms/buttons/Link";
@@ -17,12 +18,13 @@ const CardSummary = (props) => {
 
   return (
     <ContainerCard
+      isMobile={isMobile}
       onClick={() => onClickBtn()}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={() => setShow(false)}
     >
       <ImageContainer>
-        <Image src={image} />
+        <Image isMobile={isMobile} src={image} />
       </ImageContainer>
       <BodyCard>
         {showSummary ? (

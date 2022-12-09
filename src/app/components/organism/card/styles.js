@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { fadeIn } from "react-animations";
 import { DefaultTheme } from "../../../../theme/themes";
 import {
   Body,
@@ -7,6 +8,7 @@ import {
   TagLabel,
   TitleLightSmall,
 } from "../../foundations/Typography";
+const fadeAnimation = keyframes`${fadeIn}`;
 
 export const Content = styled.div`
   width: ${({ width, isMobile }) => (isMobile ? width * 0.9 : width * 0.4)}px;
@@ -62,6 +64,7 @@ export const CardContainer = styled.div`
   background-image: url(${({ urlImage }) => urlImage});
   background-size: ${({ width }) => width * 0.95}px;
   height: 334px;
+  animation: 0.5s ${fadeAnimation};
   margin-top: 30px;
 
   &:hover {
