@@ -16,7 +16,7 @@ function App() {
   return (
     <ThemeProvider theme={DefaultTheme}>
       <GlobalStyles />
-      <BrowserRouter basename="/csepias/">
+      <BrowserRouter basename="/csepias">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
