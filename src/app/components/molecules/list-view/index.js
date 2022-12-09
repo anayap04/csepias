@@ -22,7 +22,7 @@ const ListView = (props) => {
   }, [initialValue]);
 
   const renderItem = (i) => (
-    <Item key={i.id} onClick={() => itemSelected(i)} key={i.label}>
+    <Item key={i.id} onClick={() => itemSelected(i)}>
       <Body>{i.label}</Body>
     </Item>
   );
