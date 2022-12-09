@@ -9,13 +9,10 @@ const CardSummary = (props) => {
   const { title, summary, btnLabel, onClickBtn, image } = props;
   const [showSummary, setShow] = useState(false);
   const theme = useTheme() || DefaultTheme;
-  const [delayHandler, setDelayHandler] = useState(null);
   const handleMouseEnter = (event) => {
-    setDelayHandler(
-      setTimeout(() => {
-        setShow(true);
-      }, 300)
-    );
+    setTimeout(() => {
+      setShow(true);
+    }, 300);
   };
 
   return (
