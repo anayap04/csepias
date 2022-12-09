@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/csepias/static/css/main.073c9b0a.css",
+    "main.js": "/csepias/static/js/main.3bb4a2cc.js",
+    "static/js/787.849ec04d.chunk.js": "/csepias/static/js/787.849ec04d.chunk.js",
+    "static/media/security.jpg": "/csepias/static/media/security.ed83fff6778ffe811869.jpg",
+    "static/media/logo.png": "/csepias/static/media/logo.f2467d4068ee9da8f873.png",
+    "static/media/Acumin-ItPro.woff": "/csepias/static/media/Acumin-ItPro.304e60fda882236710cc.woff",
+    "static/media/Acumin-BdItPro.woff": "/csepias/static/media/Acumin-BdItPro.cfe4e47eede7bb7a20b7.woff",
+    "static/media/Acumin-BdPro.woff": "/csepias/static/media/Acumin-BdPro.9029d20893677b60fe04.woff",
+    "static/media/Acumin-RPro.woff": "/csepias/static/media/Acumin-RPro.619962d87c184a44be27.woff",
+    "static/media/Acumin-ProLight.woff": "/csepias/static/media/Acumin-ProLight.06be237790c374c98243.woff",
+    "static/media/Acumin-ProExtraLight.woff": "/csepias/static/media/Acumin-ProExtraLight.92aa1792e3357400f444.woff",
+    "static/media/menu.svg": "/csepias/static/media/menu.cc90df8e76d66825e4fdc714f377bd2e.svg",
+    "index.html": "/csepias/index.html",
+    "static/media/cross.svg": "/csepias/static/media/cross.3908cc97380693cc807fddca02be3c73.svg",
+    "main.073c9b0a.css.map": "/csepias/static/css/main.073c9b0a.css.map",
+    "main.3bb4a2cc.js.map": "/csepias/static/js/main.3bb4a2cc.js.map",
+    "787.849ec04d.chunk.js.map": "/csepias/static/js/787.849ec04d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.3bb4a2cc.js"
+  ]
+}
