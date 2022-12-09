@@ -32,12 +32,13 @@ const Agenda = (props) => {
   const decrement = () => setId(id - 1);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
     if (arrayList[arrayList.length - 1].id < id) {
       setId(arrayList[0].id);
     }
     getValue(arrayList[id] ? arrayList[id].label : arrayList[0].label);
     setMonthArray(arrayList[id] ? mock[id] : mock[0]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id, value]);
 
   const renderCards = (item, index) => (
