@@ -20,6 +20,7 @@ const Editorial = (props) => {
         title={card.title}
         captionLabel={`Por: ${card.author}`}
         linkLabel="Ir a la publicación"
+        colorTag={theme.colors.pantoneGold}
         description={card.summary}
       />
     </CardContainer>

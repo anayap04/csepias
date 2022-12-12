@@ -28,6 +28,7 @@ const PhotoCard = (props) => {
     onClickBtn,
     tag,
     captionLabel,
+    colorTag,
   } = props;
   const { width } = useWindowDimensions();
 
@@ -35,15 +36,17 @@ const PhotoCard = (props) => {
     <CardRoot isMobile={isMobile} width={width}>
       {!isMobile && (
         <ColImage urlImage={photo}>
-          <Caption>
-            <SubTitleLight color={theme.colors.white}>
-              {captionLabel}
-            </SubTitleLight>
-          </Caption>
+          {captionLabel && (
+            <Caption>
+              <SubTitleLight color={theme.colors.white}>
+                {captionLabel}
+              </SubTitleLight>
+            </Caption>
+          )}
         </ColImage>
       )}
       <Container isMobile={isMobile} width={width}>
-        <TagLabel color={theme.colors.pantoneGold}>{tag}</TagLabel>
+        <TagLabel color={colorTag}>{tag}</TagLabel>
         <SubTitle>{title}</SubTitle>
         <Body>{description}</Body>
 

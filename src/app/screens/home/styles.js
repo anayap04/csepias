@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { DefaultTheme } from "../../../theme/themes";
 import security from "../../../assets/images/security.jpg";
+import { CardRoot } from "../../components/organism/photo-card/styles";
 
 export const Root = styled.div`
 height: 100vh;
@@ -37,5 +38,9 @@ export const ContentHome = styled.div`
 export const ContentSummary = styled.div`
   padding-top: 20px;
   padding-left: 30px;
-  width: 90vw;
+  width: 100vw;
+  text-align: center;
+  ${CardRoot} {
+    text-align: left;
+  }
 `;
