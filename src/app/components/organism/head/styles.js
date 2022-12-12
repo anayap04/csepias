@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Body } from "../../foundations/Typography";
 
 export const Container = styled.div`
   padding-top: 30px;
@@ -9,12 +10,15 @@ export const Container = styled.div`
 export const HeadContainer = styled.div`
   text-align: center;
   width: 90vw;
+  ${Body} {
+    margin: 0;
+  }
 `;
 
 export const HeadTitle = styled.div`
   display: flex;
   flex-direction: row;
-  padding-left:  ${({ isMobile }) => (isMobile ? "30vw" : "40vw")};
+  padding-left: ${({ isMobile, width }) => (isMobile ? width * 0.31 +"px" : "40vw")};
 `;
 
 export const IconContainer = styled.div`
