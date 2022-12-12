@@ -22,6 +22,7 @@ export const BodyCard = styled.div`
   height: 159px;
   margin-top: -18px;
   padding-top: 16px;
+  padding-left: 5px;
   z-index: 10;
   text-align: center;
   background-color: ${({ theme }) => theme.colors.white};
