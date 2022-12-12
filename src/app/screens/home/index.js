@@ -113,7 +113,6 @@ const Home = (props) => {
   const [background, setBackground] = useState("transparent");
   const navigate = useNavigate();
   const theme = useTheme() || DefaultTheme;
-  console.log(mockAgenda[0][0])
   return (
     <Root>
       <Header setBackground={setBackground} />

@@ -39,7 +39,6 @@ const DetailCourse = (props) => {
   const code = location.state.idCourse;
 
   const courseSelected = data.data.filter((course) => course.id === code)[0];
-  console.log(courseSelected);
 
   const mapRow = (r) => (
     <TableRow isMobile={isMobile}>
@@ -99,7 +98,7 @@ const DetailCourse = (props) => {
         </DescriptionContent>
         <MoreInfo isMobile={isMobile}>
           <SubTitle>{"Costos"}</SubTitle>
-          <Table  isMobile={isMobile}>
+          <Table isMobile={isMobile}>
             <TableBody isMobile={isMobile}>
               {courseSelected.prices.map((row) => mapRow(row))}
             </TableBody>
