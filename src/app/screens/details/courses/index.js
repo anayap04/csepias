@@ -54,7 +54,7 @@ const DetailCourse = (props) => {
 
   return (
     <Root>
-      <Header optionSelected="agenda" />
+      <Header optionSelected="courses" />
       <BodyContent>
         <Tag
           label={getTagLabel(courseSelected.tag)}

@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "title": "In a baby blue Cadillac",
+      "photo": "https://cdn.pixabay.com/photo/2016/11/29/05/46/young-woman-1867618_1280.jpg",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "author": "Kelsie Glass",
+      "link": "google.com"
+    },
+    {
+      "id": 1,
+      "title": "You gotta grab the wheel and own it",
+      "photo": "https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699_1280.jpg",
+      "summary": "Hikariare edfslmfglmgl,mdsmg lalalalalalalalal.",
+      "author": "Harold Dotson",
+      "link": "google.com"
+    },
+    {
+      "id": 2,
+      "title": "And drive it like you stole it",
+      "photo": "https://cdn.pixabay.com/photo/2018/01/04/14/16/woman-3060784_1280.jpg",
+      "summary": "Hikariare edfslmfglmgl,mdsmg lalalalalalalalal.",
+      "author": "Cassie Melendez",
+      "link": "google.com"
+    }
+  ]
+}
