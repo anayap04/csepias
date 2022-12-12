@@ -11,7 +11,6 @@ import {
 } from "../../foundations/Typography";
 import {
   CardRoot,
-  ImageContent,
   Container,
   ColImage,
   Caption,
