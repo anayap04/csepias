@@ -133,7 +133,7 @@ const Info = (props) => {
     if (ref.current.offsetHeight > height * 0.8) {
       ref.current.style.height = `${height * 0.9}px`;
     }
-  }, [ref.current, idSelected, height]);
+  }, [ref, idSelected, height]);
 
   return (
     <div>
