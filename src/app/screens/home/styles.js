@@ -4,9 +4,9 @@ import security from "../../../assets/images/security.jpg";
 import { CardRoot } from "../../components/organism/photo-card/styles";
 
 export const Root = styled.div`
-height: 100vh;
-width: 100vw;
-`
+  height: 100vh;
+  width: 100vw;
+`;
 
 export const Container = styled.div`
   background: url(${security});
@@ -14,6 +14,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 `;
+
 Container.defaultProps = {
   theme: DefaultTheme,
 };
@@ -23,7 +24,6 @@ export const Content = styled.div`
     background ? background + "78" : "transparent"};
   width: 100vw;
   height: 100vh;
-  
 `;
 
 export const ContentHome = styled.div`
@@ -38,9 +38,13 @@ export const ContentHome = styled.div`
 export const ContentSummary = styled.div`
   padding-top: 20px;
   padding-left: 30px;
-  width: 100vw;
-  text-align: center;
+  width: 95vw;
   ${CardRoot} {
     text-align: left;
   }
+`;
+
+export const LinkDiv = styled.div`
+  width: 100vw;
+  text-align: center;
 `;

@@ -1,14 +1,17 @@
 import React from "react";
 import { LinkContainer } from "./styles";
-import { BodyBold } from "../../foundations/Typography";
-
+import { BodyBold, SubTitle } from "../../foundations/Typography";
 
 const Link = (props) => {
-  const { label, textColor, onClick } = props;
+  const { label, textColor, onClick, bigger } = props;
 
   return (
     <LinkContainer onClick={() => onClick()}>
-      <BodyBold color={textColor}>{label}</BodyBold>
+      {bigger ? (
+        <SubTitle color={textColor}>{label}</SubTitle>
+      ) : (
+        <BodyBold color={textColor}>{label}</BodyBold>
+      )}
     </LinkContainer>
   );
 };

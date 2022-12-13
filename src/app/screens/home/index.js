@@ -8,6 +8,7 @@ import Header from "../../components/organism/header";
 import {
   Body,
   SubTitle,
+  Title,
   TitlePrincipal,
 } from "../../components/foundations/Typography";
 import {
@@ -16,6 +17,7 @@ import {
   Content,
   ContentHome,
   ContentSummary,
+  LinkDiv,
 } from "./styles";
 import mockAgenda from "../../../__mocks__/agendaInfo.json";
 import mockCourse from "../../../__mocks__/coursesInfo.json";
@@ -41,17 +43,20 @@ const SummaryInfo = ({ theme, navigate }) => (
         en el ámbito nacional e internacional; CSEPIAS nace con una visión integral entorno a la profesionalización, estandarización, homologación, 
         certificación e innovación, de todas las actividades relacionadas con la seguridad.`}
     </Body>
-    <Link
-      onClick={() => navigate("/info")}
-      textColor={theme.colors.white}
-      label="Ver más..."
-    />
+    <LinkDiv>
+      <Link
+        bigger
+        onClick={() => navigate("/info")}
+        textColor={theme.colors.white}
+        label="Ver más..."
+      />
+    </LinkDiv>
   </ContentSummary>
 );
 
 const SummaryCourses = ({ theme, navigate }) => (
   <ContentSummary>
-    <SubTitle color={theme.colors.white}>{"Cursos"}</SubTitle>
+    <Title color={theme.colors.white}>{"Cursos"}</Title>
     <PhotoCard
       photo={mockCourse.data[0].image}
       title={mockCourse.data[0].title}
@@ -61,17 +66,20 @@ const SummaryCourses = ({ theme, navigate }) => (
       colorTag={theme.colors.pantoneBlue}
       tag="Cursos"
     />
-    <Link
-      onClick={() => navigate("/cursos")}
-      textColor={theme.colors.white}
-      label="Ver Todos los cursos disponibles"
-    />
+    <LinkDiv>
+      <Link
+        bigger
+        onClick={() => navigate("/cursos")}
+        textColor={theme.colors.white}
+        label="Ver Todos los cursos disponibles"
+      />
+    </LinkDiv>
   </ContentSummary>
 );
 
 const SummaryAgenda = ({ theme, navigate }) => (
   <ContentSummary>
-    <SubTitle color={theme.colors.white}>{"Agenda"}</SubTitle>
+    <Title color={theme.colors.white}>{"Agenda"}</Title>
     <PhotoCard
       photo={mockAgenda[0][0].image}
       title={mockAgenda[0][0].nameEvent}
@@ -81,17 +89,20 @@ const SummaryAgenda = ({ theme, navigate }) => (
       tag="Editorial"
       colorTag={theme.colors.pantoneOrange}
     />
-    <Link
-      onClick={() => navigate("/agenda")}
-      textColor={theme.colors.white}
-      label="Ver más..."
-    />
+    <LinkDiv>
+      <Link
+        bigger
+        onClick={() => navigate("/agenda")}
+        textColor={theme.colors.white}
+        label="Ver la agenda de este mes"
+      />
+    </LinkDiv>
   </ContentSummary>
 );
 
 const SummaryEditorial = ({ theme, navigate }) => (
   <ContentSummary>
-    <SubTitle color={theme.colors.white}>{"Editorial"}</SubTitle>
+    <Title color={theme.colors.white}>{"Editorial"}</Title>
     <PhotoCard
       photo={mockEditorial.data[0].photo}
       title={mockEditorial.data[0].title}
@@ -101,11 +112,14 @@ const SummaryEditorial = ({ theme, navigate }) => (
       tag="Editorial"
       colorTag={theme.colors.pantoneGold}
     />
-    <Link
-      onClick={() => navigate("/editorial")}
-      textColor={theme.colors.white}
-      label="Ver más..."
-    />
+    <LinkDiv>
+      <Link
+        bigger
+        onClick={() => navigate("/editorial")}
+        textColor={theme.colors.white}
+        label="Ver todas las publicaciones"
+      />
+    </LinkDiv>
   </ContentSummary>
 );
 
