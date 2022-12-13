@@ -1,8 +1,8 @@
 import styled, {keyframes} from "styled-components";
-import { slideInDown } from "react-animations";
+import { fadeIn } from "react-animations";
 import { Body, SubTitle } from "../../components/foundations/Typography";
 
-const fadeAnimation = keyframes`${slideInDown}`;
+const fadeAnimation = keyframes`${fadeIn}`;
 
 export const BodyContainer = styled.div`
   background-color: ${({theme}) => theme.colors.pantoneGreen};
