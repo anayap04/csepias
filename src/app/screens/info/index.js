@@ -40,23 +40,12 @@ const Mision = ({ theme, idSelected, setIdSelected }) => (
     {idSelected === 1 && (
       <>
         <Body color={theme.colors.white}>
-          {`Ser un organismo colegiado, integrado por profesionales y especialistas 
-      de la seguridad y la protección civil (Security & Safety), orientados a fortalecer éstos sectores, bajo 
-      los siguientes ejes:`}
+          {`Ser un órgano colegiado integrado por profesionales de la seguridad, con el fin de dotar, 
+          capacitar y fortalecer los conocimientos, habilidades y competencias de sus agremiados 
+          y de la sociedad en general en materia de seguridad bajo cinco ejes rectores que son: 
+          investigación, educación, difusión, práctica y ejecución ética; de los conocimientos 
+          en materia de seguridad.`}
         </Body>
-        <Body
-          color={theme.colors.white}
-        >{`Educación y profesionalización`}</Body>
-        <Body
-          color={theme.colors.white}
-        >{`Investigación y desarrollo científico`}</Body>
-        <Body
-          color={theme.colors.white}
-        >{`Divulgación y difusión del conocimiento`}</Body>
-        <Body
-          color={theme.colors.white}
-        >{`Normalización y certificación de la práctica`}</Body>
-        <Body color={theme.colors.white}>{`Innovación tecnológica`}</Body>
       </>
     )}
   </FragmentList>
@@ -70,13 +59,12 @@ const Vision = ({ theme, idSelected, setIdSelected }) => (
     <SubTitle color={theme.colors.white}>{"Visión"}</SubTitle>
     {idSelected === 2 && (
       <>
-        {" "}
         <Body color={theme.colors.white}>
-          {`Ser el organismo colegiado de seguridad y protección civil 
-      (Security & Safety), más importante e influyente en México y América Latina, respecto a las buenas 
-      prácticas, la homologación, la profesionalización, la certificación e Innovación tecnológica, 
-      de la seguridad integral en los diversos sectores sociales, fuerzas armadas, instituciones policiales, 
-      académicas y sectores empresariales.`}
+          {`Ser el organismo referente de profesionales de seguridad de México y Latinoamérica 
+          que permita la integración, capacitación e interacción de personas, instituciones, 
+          organismos, dependencias, fuerzas armadas y empresas nacionales o extranjeras, 
+          con el propósito de robustecer y homologar criterios, definiciones y actividades 
+          en materia de seguridad.`}
         </Body>
       </>
     )}
