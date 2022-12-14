@@ -36,12 +36,23 @@ const TitleHome = ({ theme }) => (
 
 const SummaryInfo = ({ theme, navigate }) => (
   <ContentSummary>
-    <SubTitle color={theme.colors.white}>{"¿Quiénes somos?"}</SubTitle>
+    <SubTitle color={theme.colors.white}>{"CESPIAS"}</SubTitle>
     <Body color={theme.colors.white}>
-      {`El Colegio Superior de Especialistas y Profesionales en Inteligencia y Administración de la Seguridad A.C. (CSEPIAS) 
-        es un órgano colegiado sin precedente, conformado por especialistas y profesionales de la seguridad, con amplia experiencia y reconocimiento 
-        en el ámbito nacional e internacional; CSEPIAS nace con una visión integral entorno a la profesionalización, estandarización, homologación, 
-        certificación e innovación, de todas las actividades relacionadas con la seguridad.`}
+      {`La inseguridad generada por amenazas, tales como crísis prolongadas, problemas sociales, 
+      organizaciones delictivas, conflictos bélicos, desastres naturales, pobreza persistente, 
+      degradación ecológica, deterioro ambiental o fenómenos sanitario-biológicos (pandemia por Covid19); 
+      son condiciones que socavan la paz, estabilidad, desarrollo e integridad de la sociedad, 
+      cobrando vital importancia, contar con instituciones y organizaciones comprometidas con la investigación, 
+      educación, profesionalización, homologación y difusión de los conocimientos y experiencias en materia de 
+      seguridad, para contribuir al bién común. En los últimos años de la década pasada, profesionales 
+      y expertos de la seguridad, iniciaron la tarea de coordinarse y constituir un órgano colegiado 
+      con una vision académica, de investigación, de desarrollo y difusión del conocimiento de 
+      la seguridad, que diera voz, participación y representación a todos los profesionales y 
+      especialistas de la seguridad en México y Latinoamérica; este órgano colegiado constituido en el 
+      2021, es el Colegio Superior de Especialistas y Profesionales en Inteligencia y Administración 
+      de la Seguridad A.C. (CSEPIAS), y tiene como principales objetivos: fortalecer la cultura, 
+      profesionalización, gestión y desarrollo de la seguridad en las áreas de, protección civil (safety), 
+      seguridad patrimonial y de personas (security), ciberseguridad y bioseguridad.`}
     </Body>
     <LinkDiv>
       <Link

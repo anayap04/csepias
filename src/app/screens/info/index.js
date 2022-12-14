@@ -18,14 +18,32 @@ const AboutUs = ({ theme, idSelected, setIdSelected }) => {
     >
       <SubTitle color={theme.colors.white}>{"¿Quiénes somos?"}</SubTitle>
       {idSelected === 0 && (
+        <>
         <Body color={theme.colors.white}>
-          {`El Colegio Superior de Especialistas y Profesionales en 
-        Inteligencia y Administración de la Seguridad A.C. (CSEPIAS) es un órgano colegiado sin 
-        precedente, conformado por especialistas y profesionales de la seguridad, con amplia experiencia 
-        y reconocimiento en el ámbito nacional e internacional; CSEPIAS nace con una visión integral 
-        entorno a la profesionalización, estandarización, homologación, certificación e innovación, de 
-        todas las actividades relacionadas con la seguridad.`}
+          {`El Colegio Superior de Especialistas y Profesionales en Inteligencia y Administración 
+          de la Seguridad A.C. (CSEPIAS), es un órgano colegiado integrado por profesionales y 
+          expertos de la seguridad, con el propósito de impulsar, promover y fortalecer, la práctica, 
+          gestión, educación y profesionalización de la seguridad, así como de la cultura cívica e 
+          integración organizacional para la seguridad. CSEPIAS tiene su marco de acción entorno a 
+          la seguridad patrimonial (Security), protección civil (Safety), ciberseguridad y bioseguridad 
+          que entre otras considera, la calidad de vida e identidad de las personas con su entorno.`}
         </Body>
+         <Body color={theme.colors.white}>
+         {`CSEPIAS contribuye a fortalecer la seguridad física, seguridad personal, seguridad tecnológica, 
+         de redes, sistemas y bases de datos, robótica, internet de las cosas, seguridad intelectual, 
+         inteligencia, contrainteligencia, protección civil, atención de emergencias y desastres, 
+         seguridad para el trabajo, seguridad e higiene, seguridad humana, manejo y atención de crisis, 
+         seguridad sanitaria, seguridad ambiental y ecológica, seguridad alimentaria, seguridad de la salud, 
+         control de confianza e investigación y todas aquellas actividades relacionadas con la gestión 
+         de la paz, el orden, la convivencia, la vida, la salud, la integridad, el bienestar, el cuidado 
+         de bienes, pertenencias y espacios, así como de la estabilidad y sustentabilidad humana.`}
+       </Body>
+       <Body color={theme.colors.white}>
+         {`CSEPIAS agrega valor a las organizaciones a través de convenios de colaboración para el 
+         desarrollo, diseño, recomendaciones, evaluación, auditoría, o difusión, de conocimientos y 
+         metodologías para fortalecer la seguridad e integridad organizacional.`}
+       </Body>
+       </>
       )}
     </FragmentList>
   );
