@@ -12,7 +12,8 @@ export const BodyContent = styled.div`
 export const ImageContent = styled.img`
   width: 100vw;
   height: 44vh;
-  margin: -30px;
+  margin-left: -30px;
+  margin-right: -30px;
   object-fit: cover;
   object-position: 100% 0;
 `;

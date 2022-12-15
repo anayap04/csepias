@@ -12,13 +12,15 @@ import { useEffect } from "react";
 import { isMobile } from "react-device-detect";
 import { useNavigate } from "react-router-dom";
 import useWindowDimensions from "../../../utils/useWindowDimensions";
+import { getDateWithDay } from "../../../utils/dateUtils";
+import { CapitalizeFirstWord } from "../../../utils/mappers";
 
 //Mock data
 const mock = require("../../../__mocks__/agendaInfo.json");
 
 const Agenda = (props) => {
   const theme = useTheme() || DefaultTheme;
-  const {width} = useWindowDimensions()
+  const { width } = useWindowDimensions();
   const navigate = useNavigate();
   const arrayList = [
     { label: "Octubre", id: 0 },
@@ -47,7 +49,7 @@ const Agenda = (props) => {
       <CardLong
         title={item.nameEvent}
         image={item.image}
-        date={item.date}
+        date={CapitalizeFirstWord(getDateWithDay(item.date))}
         description={item.summary}
         buttonLabel="Ver más información"
         tag="Webinar Internacional"
@@ -85,13 +87,13 @@ const Agenda = (props) => {
                 iconName="LeftArrow"
               />
             )}
-              <ListView
-                getIdValue={setId}
-                width={isMobile ? width * 0.57 : 150}
-                getValue={getValue}
-                initialValue={value}
-                arrayList={arrayList}
-              />
+            <ListView
+              getIdValue={setId}
+              width={isMobile ? width * 0.57 : 200}
+              getValue={getValue}
+              initialValue={value}
+              arrayList={arrayList}
+            />
             <IconBtn
               onClick={() => increment()}
               hoverColor={theme.colors.pantoneGreen}

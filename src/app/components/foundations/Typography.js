@@ -82,7 +82,18 @@ const TagLabel = styled.p`
   color: ${({ theme, color }) => color || theme.colors.black};
   font-family: Acumin-ProLight;
   font-weight: 300;
+  margin: 0;
 `;
+
+const ItalicTitle = styled.p`
+  font-size: 20px;
+  color: ${({ theme, color }) => color || theme.colors.black};
+  font-family: Acumin-ItPro;
+`
+
+ItalicTitle.defaultProps = {
+  theme: DefaultTheme,
+};
 
 export {
   TitlePrincipal,
@@ -96,4 +107,5 @@ export {
   SubTitleLight,
   SubTitleSmall,
   SubTitleLightSmall,
+  ItalicTitle,
 };

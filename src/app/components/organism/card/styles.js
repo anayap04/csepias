@@ -78,7 +78,7 @@ export const CardContainer = styled.div`
       width: ${({ width, isMobile }) =>
         isMobile ? width * 0.7 : width * 0.9}px;
       transition: all 0.5s ease 0.1s;
-      background-color: ${({ theme }) => theme.colors.white700}bd;
+      background-color: ${({ theme }) => theme.colors.white700}de;
       height: 324px;
     }
     ${Row} {

@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   & ${SubTitleLightSmall} {
-    margin-top: 2px;
+    margin-top: 1px;
     margin-bottom: 0px;
   }
 `

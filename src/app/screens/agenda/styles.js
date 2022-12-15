@@ -14,7 +14,7 @@ export const Filter = styled.div`
   padding-top: 10px;
   width: ${({isMobile}) => isMobile ? '95vw': '95vw' };
   & > * {
-    margin: 15px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
   }
 `
 
@@ -22,7 +22,7 @@ export const FilterControlers = styled.div`
   display: ${({isMobile}) => isMobile ? 'contents': 'flex' };
   flex-direction: row;
   float: right;
-  margin: 0 ${({isMobile}) => isMobile ? '10px': '0' } 10px 0;
+  margin: ${({isMobile}) => isMobile ? '15px': 'auto 10px auto auto' };
   ${IconBtnContainer} {
     margin-left: ${({isMobile}) => isMobile && '5px'};
     margin-right: ${({isMobile}) => isMobile && '5px'};
