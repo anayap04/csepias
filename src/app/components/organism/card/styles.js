@@ -59,6 +59,10 @@ export const Row = styled.div`
   }
 `;
 
+export const BodyDescription = styled(Body)`
+  display: none;
+`
+
 export const CardContainer = styled.div`
   width: ${({ width }) => width * 0.95}px;
   background-image: url(${({ urlImage }) => urlImage});

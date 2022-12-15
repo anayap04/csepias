@@ -4,23 +4,24 @@ import { useTheme } from "styled-components";
 import { DefaultTheme } from "../../../../theme/themes";
 import Link from "../../atoms/buttons/Link";
 import { Body, SubTitle, SubTitleSmall } from "../../foundations/Typography";
-import { BodyCard, ImageContainer, ContainerCard, Image } from "./styles";
+import {
+  BodyCard,
+  ImageContainer,
+  ContainerCard,
+  Image,
+  BodyDescription,
+} from "./styles";
 
 const CardSummary = (props) => {
   const { title, summary, btnLabel, onClickBtn, image } = props;
   const [showSummary, setShow] = useState(false);
   const theme = useTheme() || DefaultTheme;
-  const handleMouseEnter = (event) => {
-    setTimeout(() => {
-      setShow(true);
-    }, 300);
-  };
 
   return (
     <ContainerCard
       isMobile={isMobile}
       onClick={() => onClickBtn()}
-      onMouseEnter={handleMouseEnter}
+      onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
       <ImageContainer>
@@ -32,7 +33,9 @@ const CardSummary = (props) => {
         ) : (
           <SubTitle>{title}</SubTitle>
         )}
-        {showSummary && !isMobile && <Body>{summary}</Body>}
+        {showSummary && !isMobile && (
+          <BodyDescription><Body>{summary}</Body></BodyDescription>
+        )}
         <Link
           onClick={() => onClickBtn()}
           textColor={theme.colors.pantoneGreen}
