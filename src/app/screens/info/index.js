@@ -150,8 +150,8 @@ const Info = (props) => {
   const [idSelected, setIdSelected] = useState(0);
 
   useEffect(() => {
-    if (ref.current.offsetHeight > height * 0.8) {
-      ref.current.style.height = `${height * 0.9}px`;
+    if (ref.current.offsetHeight > height * 0.75) {
+      ref.current.style.height = `${height * 0.93}px`;
     }
   }, [ref, idSelected, height]);
 
