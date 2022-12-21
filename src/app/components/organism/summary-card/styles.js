@@ -55,7 +55,7 @@ export const ContainerCard = styled.div`
       transition: height 0.3s ease-in-out;
       margin-top: -161px;
       position: absolute;
-      width: ${({ isMobile }) => (isMobile ? "80vw" : "270px")};
+      width: ${({ isMobile }) => (isMobile ? "80vw" : "269px")};
       background-color: ${({ theme }) => theme.colors.white}c2;
       ${BodyDescription} {
         height: 150px;
