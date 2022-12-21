@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/csepias/static/css/main.073c9b0a.css",
-    "main.js": "/csepias/static/js/main.776818bd.js",
+    "main.js": "/csepias/static/js/main.eb144612.js",
     "static/js/787.849ec04d.chunk.js": "/csepias/static/js/787.849ec04d.chunk.js",
     "static/media/security.jpg": "/csepias/static/media/security.ed83fff6778ffe811869.jpg",
-    "static/media/head.png": "/csepias/static/media/head.6cc74e3db7fc8e810e4c.png",
+    "static/media/head.png": "/csepias/static/media/head.fb867d52e596902abed3.png",
     "static/media/logo.png": "/csepias/static/media/logo.f2467d4068ee9da8f873.png",
     "static/media/Acumin-ItPro.woff": "/csepias/static/media/Acumin-ItPro.304e60fda882236710cc.woff",
     "static/media/Acumin-BdItPro.woff": "/csepias/static/media/Acumin-BdItPro.cfe4e47eede7bb7a20b7.woff",
@@ -16,11 +16,11 @@
     "index.html": "/csepias/index.html",
     "static/media/cross.svg": "/csepias/static/media/cross.3908cc97380693cc807fddca02be3c73.svg",
     "main.073c9b0a.css.map": "/csepias/static/css/main.073c9b0a.css.map",
-    "main.776818bd.js.map": "/csepias/static/js/main.776818bd.js.map",
+    "main.eb144612.js.map": "/csepias/static/js/main.eb144612.js.map",
     "787.849ec04d.chunk.js.map": "/csepias/static/js/787.849ec04d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.776818bd.js"
+    "static/js/main.eb144612.js"
   ]
 }
