@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const HeadContainer = styled.div`
   text-align: center;
-  width: 90vw;
+  width: 95vw;
   ${Body} {
     margin: 0;
   }
