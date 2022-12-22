@@ -18,7 +18,7 @@ export const HeadContainer = styled.div`
 export const HeadTitle = styled.div`
   display: flex;
   flex-direction: row;
-  padding-left: ${({ isMobile, width }) => (isMobile ? width * 0.31 +"px" : "40vw")};
+  justify-content: center;
 `;
 
 export const IconContainer = styled.div`
